@@ -37,7 +37,7 @@ if($_SESSION['status']!="Administrator")
 
     <div class='login-form'>
     <a class='close' href="../index.php"><i class="fas fa-window-close"></i></a>
-    <h2 class='prijava-naslov'>Upravljanje korisnicima</h2>
+    <h2 class='prijava-naslov'>Upravljanje urednicima</h2>
     <br>
     
     <div id='sviKorisnici'></div>

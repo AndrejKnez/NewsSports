@@ -27,16 +27,16 @@ if(!$db->connect())exit();
 
     <div class="logo">
 
-        <img src="images/logo.png" alt="logo">
+       <p><i class='logotitle'><b>SPORTSKE VESTI</b> </i> </p> 
     </div>
 
 
     <div id="icons">
 
-        <a target="_blank" href="https://www.instagram.com/mozzartsport/"><i class="fab fa-instagram"></i></a>
-        <a target="_blank" href="https://www.facebook.com/MozzartSport/"><i class="fab fa-facebook"></i></a>
-        <a target="_blank" href="https://www.youtube.com/user/SportMOZZART"><i class="fab fa-youtube"></i></a>
-        <a target="_blank" href="https://twitter.com/MozzartSport/"><i class="fab fa-twitter"></i></a>
+        <a target="_blank" href=""><i class="fab fa-instagram"></i></a>
+        <a target="_blank" href=""><i class="fab fa-facebook"></i></a>
+        <a target="_blank" href=""><i class="fab fa-youtube"></i></a>
+        <a target="_blank" href=""><i class="fab fa-twitter"></i></a>
         <a href='pretraga.php'><i class="fas fa-search"></i></a>
         <?php
         if(login())
@@ -112,11 +112,12 @@ if(!$db->connect())exit();
             echo   "<div class='dropdown'>";
             echo   "<ul class='dropbtn'>OPCIJE</ul>";
             echo   "<div class='dropdown-content'>";
-            echo   "<a id='korisnici' href='admin/korisnici.php'>KORISNICI</a>";
+            echo   "<a id='korisnici' href='admin/korisnici.php'>UREDNICI</a>";
             echo   "<a href='admin/addnews.php'>DODAJ VEST</a>";
             echo   "<a href='admin/deletenews.php'>OBRISI VEST</a>";
             echo   "<a href='dozvolakomentara.php'>DOZVOLA KOMENTARA</a>";
             echo   "<a href='statistika.php'>STATISTIKA</a>";
+            
                             
             echo     "</div>";   
             echo     "</div>";

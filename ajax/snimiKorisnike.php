@@ -1,10 +1,11 @@
 <?php
 session_start();
-$db=mysqli_connect("localhost", "root", "12345", "baza");
+$db=mysqli_connect("localhost", "root", "", "baza");
 mysqli_query($db, "SET NAMES utf8");
 if(!$db) exit();
 $opcija=$_GET['opcija'];
 require_once("../klase/classStatistika.php");
+
 
 //update korisnika
 if($opcija=="update")
@@ -74,7 +75,7 @@ if($opcija=="delete")
 //selektovanje korisnika
 if($opcija=="select")
 {
-    $sql="SELECT * FROM korisnik order by korisnik_id ASC";
+    $sql="SELECT * FROM korisnik WHERE korisnik_status='Urednik' order by korisnik_id ASC";
     $rez=mysqli_query($db, $sql);
     $sviPodaci=mysqli_fetch_all($rez, MYSQLI_ASSOC);   
     echo JSON_encode($sviPodaci, 256);

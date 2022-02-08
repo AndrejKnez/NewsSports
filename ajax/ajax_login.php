@@ -163,7 +163,7 @@ if($funkcija=="novalozinka")
                         } 
                         else
                         {
-                            $odgovor['greska']="Uspesno promenjena lozinka";
+                            $odgovor['poruka']="Uspesno promenjena lozinka";
                             Statistika::upisiLog("../logs/logovanja.log", "{$_SESSION['ime']} {$_SESSION['prezime']}, Uspesno promenjena lozinka");
 
                         }

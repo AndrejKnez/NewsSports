@@ -8,7 +8,7 @@ class Baza{
     public function __construct(){
         $this->lokacija="localhost";
         $this->korime="root";
-        $this->lozinka="12345";
+        $this->lozinka="";
         $this->baza="baza";
     }
     public function __destruct(){

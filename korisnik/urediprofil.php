@@ -31,7 +31,7 @@ $poruka="";
 
     <div class="logo">
 
-        <img src="../images/logo.png" alt="logo">
+    <p><i class='logotitle'><b>SPORTSKE VESTI</b> </i> </p> 
     </div>
 
 
@@ -116,7 +116,7 @@ $poruka="";
             echo   "<div class='dropdown'>";
             echo   "<ul class='dropbtn'>OPCIJE</ul>";
             echo   "<div class='dropdown-content'>";
-            echo   "<a id='korisnici' href='../admin/korisnici.php'>KORISNICI</a>";
+            echo   "<a id='korisnici' href='../admin/korisnici.php'>UREDNICI</a>";
             echo   "<a href='../admin/addnews.php'>DODAJ VEST</a>";
             echo   "<a href='../admin/deletenews.php'>OBRISI VEST</a>";
             echo   "<a href='../admin/dozvola.php'>DOZVOLA KOMENTARA</a>";
@@ -287,8 +287,9 @@ else
 
 
 ?>  
-<p><?= $poruka?></p>
+
 </form> 
+<p><?= $poruka?></p>
 </div>    
             
             

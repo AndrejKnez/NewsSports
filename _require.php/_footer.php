@@ -7,13 +7,13 @@
 <div class="content">
 <div class="logofooter">
 
-<img src="images/mozzart_logo.png" alt="Logo">  
+
     
 </div> <!--end logofooter-->
 
 <div class="appfooter">
 
-<p>PREUZMITE I Moozart sport aplikacije</p>
+<p></p>
 
 <div class="iconsfooter">
 <a href=""><i class="fab fa-apple"></i></a>
@@ -62,10 +62,10 @@ $upit="SELECT * FROM kategorija";
 <div class="content">
 <div class="footerbotttomleft">
     <div class="iconsfooterleft">
-    <a href="https://www.facebook.com/MozzartSport/"><i class="fab fa-facebook"></i></a>
-    <a href="https://twitter.com/MozzartSport/"><i class="fab fa-twitter"></i></a>
-    <a href="https://www.youtube.com/user/SportMOZZART"><i class="fab fa-youtube"></i></a>
-    <a href="https://www.instagram.com/mozzartsport/"><i class="fab fa-instagram"></i></a>
+    <a href=""><i class="fab fa-facebook"></i></a>
+    <a href=""><i class="fab fa-twitter"></i></a>
+    <a href=""><i class="fab fa-youtube"></i></a>
+    <a href=""><i class="fab fa-instagram"></i></a>
 </div><!--end iconsfooterleft-->
 <div class="footerbottomlefttext">
 <a href="#">O nama</a>

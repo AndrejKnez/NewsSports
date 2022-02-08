@@ -28,7 +28,7 @@ if(!$db->connect())exit();
     
         
          <div class='arhiva-left'>
-         <h3 id='najvesti'>Arhiva vesti</h3>
+             <h3 id='najvesti'>Arhiva vesti</h3>
          <?php
              
 
@@ -36,7 +36,8 @@ if(!$db->connect())exit();
         $rez=$db->query($upit);
         while($red=$db->fetch_object($rez))
         echo "<div class='arhiva'><a class='navitems' href='svevesti.php?kategorija={$red->kategorija_id}'>{$red->kategorija_naziv}</a></div>";
-    ?>
+    ?>         
+      
 
 
          </div>

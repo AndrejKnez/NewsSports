@@ -9,7 +9,7 @@ if(!login())
 }
 $db=new Baza();
 if(!$db->connect())exit();
-
+$sesija = $_SESSION['id'];
 $poruka="";
 
 ?>
@@ -64,7 +64,8 @@ if(isset($_POST['obrisivest']))
 <select name="idVesti"  id="idVesti">
     <option value="0">Izaberite vest za brisanje</option>
     <?php
-    $upit = "SELECT * FROM vest WHERE vest_obrisan=0 ORDER BY vest_id ASC";
+    
+    $upit = "SELECT * FROM vest WHERE vest_obrisan=0 AND vest_autor_id=$sesija ORDER BY vest_id ASC";
     $rez = $db->query($upit);
     while($red = $db->fetch_object($rez))
     {

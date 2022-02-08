@@ -11,7 +11,9 @@ body{
 a{
     text-decoration: none;
 }
-
+.logotitle{
+    color: beige;
+}
 /*header */
 header{
     background-color: #280071;
